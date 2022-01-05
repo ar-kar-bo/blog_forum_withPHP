@@ -1,0 +1,113 @@
+user
+============
+id
+name
+email
+password
+image(nullable)
+
+languages
+============
+id
+slug 8888-php(0080-java)
+name(php,java)
+
+category
+=============
+id
+slug 8888-php(0080-java)
+name(php,java)
+
+articles
+=============
+id
+slug
+title
+image
+category_id
+user_id
+description
+
+articles_language
+===============
+articles_id
+languages_id
+
+articles_like
+================
+user_id
+articles_id
+
+articles_comments
+===============
+user_id
+articles_id
+comment
+
+
+<i>
+
+api.php?like&user_id=1&articles_id=1
+
+
+******************************************************
+Array
+(
+    [data] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 3
+                    [user_id] => 3
+                    [category_id] => 2
+                    [slug] => slug3
+                    [title] => title3
+                    [image] => https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6G3iHwSRriswzZg1omVeugK5NZycMVt6nSQ&usqp=CAU
+                    [description] => description 3
+                    [comment_count] => 3
+                    [like_count] => 2
+                )
+
+        )
+
+    [total] => 1
+    [total_page_no] => 1
+    [pre_url] => ?page=1&category=web-dev
+    [next_url] => ?page=1&category=web-dev
+
+******************************************************
+
+Array
+(
+    [data] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 2
+                    [article_id] => 2
+                    [language_id] => 3
+                    [user_id] => 2
+                    [category_id] => 1
+                    [slug] => slug2
+                    [title] => title2
+                    [image] => https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNe90xHTFPXP67MEk0gnul2xGJsx_M8SDXuFybm0OU_ShyFO0RxQeuChooGNXjAAyUOw&usqp=CAU
+                    [description] => description 2
+                    [comment_count] => 0
+                    [like_count] => 0
+                )
+
+        )
+
+    [total] => 1
+    [total_page_no] => 1
+    [pre_url] => ?page=1&language=laravel
+    [next_url] => ?page=1&language=laravel
+********************************************************
+
+home work
+---------------
+show own posts
+update delete post
+like action in index page
+#40d080
+#40e0d0
